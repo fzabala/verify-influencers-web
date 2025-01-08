@@ -1,0 +1,9 @@
+.page {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  background-size: cover;
+  position: relative;
+  padding: var(--vertical-space) var(--horizontal-space);
+}

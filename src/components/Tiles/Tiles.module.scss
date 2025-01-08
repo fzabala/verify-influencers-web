@@ -1,0 +1,68 @@
+.tiles {
+  display: grid;
+  grid-auto-columns: 1fr;
+  padding: var(--vertical-space) 0;
+  gap: 2rem;
+
+  &-tile {
+    background: rgb(var(--background-color-alt));
+    grid-row: 1;
+    border: 1px solid rgb(var(--border-color));
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+  }
+
+  &_dashboard {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    align-items: center;
+    gap: 1rem;
+
+    &-icon {
+      font-size: 2rem;
+      color: rgb(var(--primary-color));
+      display: flex;
+    }
+    &-content {
+      &-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(var(--text-color));
+        margin-bottom: 0.25rem;
+      }
+      &-text {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  &_user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &-text {
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgb(var(--text-color));
+        margin-bottom: 0.5rem;
+      }
+
+      &-icon {
+        color: rgb(var(--primary-color));
+      }
+    }
+    &-content {
+      color: rgb(var(--primary-color));
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    &-text {
+      font-size: 0.75rem;
+    }
+  }
+}

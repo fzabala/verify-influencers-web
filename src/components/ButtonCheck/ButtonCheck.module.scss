@@ -1,0 +1,27 @@
+.button_check {
+  border: 1px solid rgb(var(--border-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  padding: var(--vertical-space) var(--inner-horizontal-space);
+  cursor: pointer;
+
+  &:hover:not(.button_check--disabled) {
+    background: rgb(var(--border-color));
+  }
+
+  &--active {
+    border: 1px solid rgb(var(--primary-color));
+    background-color: rgb(var(--primary-color-background));
+
+    &:hover:not(.button_check--disabled) {
+      background: rgb(var(--primary-color-background));
+    }
+  }
+
+  &--disabled {
+    opacity: var(--opacity-disabled);
+    cursor: default;
+  }
+}

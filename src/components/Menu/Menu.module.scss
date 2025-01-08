@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  flex-direction: horizontal;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  align-items: center;
+
+  &-item {
+    color: rgb(var(--text-color));
+    &:hover {
+      color: rgb(var(--text-color-alt));
+    }
+  }
+}

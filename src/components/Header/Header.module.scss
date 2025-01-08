@@ -1,0 +1,6 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--vertical-space) var(--horizontal-space);
+  border-bottom: 1px solid rgb(var(--border-color));
+}

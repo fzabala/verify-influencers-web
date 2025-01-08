@@ -1,0 +1,30 @@
+.chips {
+  display: flex;
+  gap: 0.5rem;
+  margin: var(--vertical-space) 0;
+
+  &_item {
+    background: rgb(var(--background-color-alt));
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: rgb(var(--text-color-alt));
+    font-size: 0.75rem;
+    border: 1px solid rgb(var(--background-color-alt));
+    &:not(.chips_item--disabled) {
+      cursor: pointer;
+    }
+
+    &:hover:not(.chips_item--disabled) {
+      border-color: rgb(var(--border-color));
+    }
+
+    &--dark {
+      background-color: rgb(var(--background-color));
+    }
+
+    &--active {
+      background: rgb(var(--primary-color));
+      color: rgb(var(--primary-color-text));
+    }
+  }
+}

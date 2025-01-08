@@ -1,0 +1,14 @@
+.message {
+  border-radius: var(--border-radius);
+  padding: calc(var(--vertical-space) / 2) var(--inner-horizontal-space);
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  &-color {
+    &--danger {
+      border: 1px solid rgb(var(--danger-color));
+      color: rgb(var(--danger-color));
+      background-color: rgb(var(--danger-color-background));
+    }
+  }
+}
